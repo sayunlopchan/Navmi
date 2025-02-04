@@ -829,6 +829,11 @@ h1>strong {
 
 @media (max-width:640px) {
 
+  /* result */
+  .result-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
   /* hanner-1  */
   .banner-heading>h3 {
     font-size: var(--text-lg);
@@ -872,10 +877,6 @@ h1>strong {
 
 @media (max-width:375px) {
 
-  /* result */
-  .result-card-wrapper {
-    grid-template-columns: 1fr;
-  }
 
   /* growth card */
   .growth-card-head>h4 {
