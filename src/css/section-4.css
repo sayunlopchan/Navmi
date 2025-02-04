@@ -1,0 +1,158 @@
+.result-section-2 {
+  background-color: white;
+  padding: 50px 0;
+}
+
+
+.banner-1 {
+  display: flex;
+  position: relative;
+  padding: 60px 0;
+}
+
+.banner-1::before,
+.banner-1::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: var(--primary);
+  position: absolute;
+}
+
+.banner-1::before {
+  top: 0;
+}
+
+.banner-1::after {
+  bottom: 0;
+}
+
+.banner-heading {
+  width: 40%;
+}
+
+.banner-1>ul {
+  width: 60%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  justify-content: center;
+}
+
+
+.banner-heading>h3 {
+  text-align: start;
+  font-size: var(--text-3xl);
+  font-weight: 500;
+}
+
+.banner-heading>h3>span {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.banner-1>ul>li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.banner-1>ul>li>img {
+  width: 30px;
+}
+
+
+
+/*  */
+/* banner-2 */
+
+.banner-2 {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+  background-color: var(--light);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.banner-2>.box>h4 {
+  font-size: var(--text-5xl);
+}
+
+.banner-2>.box>h4,
+.banner-2>.box>p {
+  color: white;
+}
+
+.banner-2>.box>h4 {
+  font-weight: bold;
+}
+
+.banner-2>.box>p {
+  font-weight: 600;
+}
+
+.banner-2>.box {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--primary);
+}
+
+.banner-2>.box:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.banner-2>.box:nth-child(4) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+@media (max-width:1280px) {}
+
+@media (max-width:1024px) {
+  .banner-1 {
+    flex-direction: column;
+  }
+
+  .banner-heading {
+    width: 100%;
+  }
+
+  .banner-heading>h3 {
+    text-align: center;
+    font-size: var(--text-2xl);
+  }
+
+  .banner-1>ul {
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 20px auto;
+  }
+
+
+  /* banner 2 */
+  .banner-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-2>.box {
+    border-radius: 10px;
+  }
+
+}
+
+/* Media query for small screen */
+@media (max-width: 768px) {}
+
+@media (max-width:640px) {}
+
+@media (max-width:375px) {}

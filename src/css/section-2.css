@@ -1,0 +1,52 @@
+/* section 2 our services */
+
+.services {
+  background-color: var(--light);
+  display: grid;
+  place-content: center;
+  padding: 40px 0;
+}
+
+
+.card-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+
+.card {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 30px;
+  background-color: var(--primary);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.card>img {
+  width: 80px;
+  height: 80px;
+}
+
+.card-heading-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-heading-wrapper>h3 {
+  font-size: var(--text-lg);
+}
+
+
+
+.card-heading-wrapper>i {
+  font-size: var(--text-2xl);
+}

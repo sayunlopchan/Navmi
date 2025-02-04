@@ -16,7 +16,7 @@
   --dark: #000000;
 
   --text-para: #263238;
-
+  --footer-footer: #22292C;
   /* fonts style */
   --heading-font: "Work Sans", serif;
   --para-font: "Montserrat", serif;
@@ -77,7 +77,6 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
-  font-weight: bold;
 }
 
 html {

@@ -1,0 +1,92 @@
+.section-9 {
+  background-color: var(--primary);
+  padding: 50px 0;
+}
+
+.section-9>.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.section-9>.container>h3 {
+  font-size: var(--text-4xl);
+}
+
+/* section-9-grid */
+
+.section-9-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.section-9-card {
+  background-color: var(--light);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section-9-card>.card-head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section-9-card>.card-head>h4 {
+  font-size: var(--text-xlg);
+  font-weight: 600;
+}
+
+.section-9-card>p {
+  font-size: var(--text-md);
+  font-weight: 500;
+}
+
+.section-9>.container>button {
+  background-color: var(--dark);
+  font-size: var(--text-3xl);
+  font-weight: bold;
+  color: var(--light);
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+
+
+
+
+@media (max-width:1280px) {}
+
+@media (max-width:1024px) {
+  .section-9-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-9>.container>button {
+    font-size: var(--text-2xl);
+    padding: 15px 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .section-9>.container>button {
+    font-size: var(--text-xxlg);
+    padding: 15px 30px;
+  }
+
+}
+
+@media (max-width:640px) {
+  .section-9-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-9>.container>button {
+    font-size: var(--text-md);
+  }
+}
+
+@media (max-width:375px) {}

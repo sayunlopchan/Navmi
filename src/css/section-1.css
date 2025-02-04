@@ -1,0 +1,51 @@
+.hero-section {
+  margin: auto;
+}
+
+.hero-section .container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+}
+
+h1 {
+  font-size: var(--text-4xl);
+  line-height: 2.8rem;
+}
+
+
+
+.hero-section img {
+  width: 100%;
+  max-width: 800px;
+}
+
+h1>strong {
+  font-size: var(--text-2xl);
+}
+
+
+.text-wrapper>p {
+  color: var(--dark);
+  margin-top: 20px;
+}
+
+.text-wrapper>button {
+  width: fit-content;
+  margin-top: 20px;
+  color: var(--light);
+  background-color: var(--dark);
+  padding: 15px 10px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  font-size: var(--text-sm);
+}
+
+
+.text-wrapper button>img {
+  height: 10px;
+}
