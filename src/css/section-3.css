@@ -67,6 +67,13 @@
 
 
 
+.btn-wrapper>button>img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
 
 
 
@@ -81,6 +88,13 @@
   .result-card-wrapper {
     grid-template-columns: 1fr;
   }
+
+  .btn-wrapper>button>img {
+    width: 14px;
+    height: 14px;
+  }
+
+
 }
 
 @media (max-width:375px) {

@@ -55,6 +55,12 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
+}
+
+.section-9>.container>button>img {
+  height: 20px;
+  width: 20px;
 }
 
 
@@ -84,6 +90,12 @@
   .section-9>.container>h3 {
     font-size: var(--text-2xl);
   }
+
+  .btn-wrapper>button>img {
+    width: 14px;
+    height: 14px;
+  }
+
 }
 
 @media (max-width:375px) {
