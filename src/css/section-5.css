@@ -61,6 +61,7 @@
 }
 
 .client-a-head {
+  padding-bottom: 20px;
   border-bottom: 2px solid var(--light);
 }
 
@@ -265,7 +266,7 @@
 .growth-card p {
   color: var(--light);
   font-weight: 500;
-  /* font-size: var(--text-sm); */
+  font-size: var(--text-sm);
 }
 
 .growth-card p>span {
@@ -337,7 +338,6 @@
 @media (max-width:375px) {
 
   /* growth card */
-
   .growth-result-card-container {
     grid-template-columns: 1fr;
   }
