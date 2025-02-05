@@ -1,0 +1,19 @@
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.imp {
+  /* color: red; */
+}
+
+.popup-form>.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.info-texts {}
+
+
+
+/* form */

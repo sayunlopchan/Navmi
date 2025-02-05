@@ -11,7 +11,7 @@ menuButton.addEventListener('click', () => {
   overlay.classList.add('show'); // Show the overlay
 });
 
-// Add click event to close the menu when the close button is clicked
+
 closeButton.addEventListener('click', () => {
   menuContainer.style.right = '-360px';
   overlay.classList.remove('show'); // Hide the overlay

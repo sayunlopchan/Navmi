@@ -49,32 +49,33 @@
   color: var(--text-para);
 }
 
+
 .section-8>.container>button {
   background-color: var(--dark);
-  color: var(--light);
-  padding: 20px 30px;
-  border-radius: 10px;
   font-size: var(--text-xxlg);
   font-weight: bold;
+  color: var(--light);
+  padding: 20px 30px;
+  border-radius: 15px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  align-items: center;
 }
 
 
 
-@media (max-width:1280px) {}
 
-@media (max-width:1024px) {}
-
-@media (max-width: 768px) {
-
+@media (max-width:1024px) {
   .section-8>.container>button {
-    padding: 20px 30px;
-    font-size: var(--text-xl);
+    font-size: var(--text-xlg);
+    padding: 15px 30px;
+  }
+}
+
+
+@media (max-width:640px) {
+  .section-8>.container>button {
+    font-size: var(--text-md);
   }
 
 }
-
-@media (max-width:640px) {}
-
-@media (max-width:375px) {}

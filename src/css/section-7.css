@@ -1,9 +1,10 @@
 .section-7 {
   background: var(--primary);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.section-7>.heading {
+  padding: 50px;
 }
 
 .section-7>.container {
@@ -21,21 +22,17 @@
 }
 
 .review-card {
-
+  flex: 0 0 calc(50% - 10px);
+  min-width: calc(50% - 10px);
   scroll-snap-align: start;
   background-color: var(--light);
   color: var(--text-para);
   border-radius: 20px;
-
   box-sizing: border-box;
-
-  flex: 0 0 calc(50% - 10px);
-  min-width: calc(50% - 10px);
 }
 
 
 /* btn */
-
 .slider-btn {
   width: 40px;
   height: 40px;
@@ -46,7 +43,6 @@
 .slider-btn>i {
   font-size: var(--text-md);
 }
-
 
 .prev-btn,
 .next-btn {
@@ -64,8 +60,6 @@
   box-shadow: rgba(0, 0, 0, 0.15) -2.4px -2.4px 3.2px;
 
 }
-
-
 
 
 

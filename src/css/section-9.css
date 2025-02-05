@@ -11,7 +11,7 @@
 }
 
 .section-9>.container>h3 {
-  font-size: var(--text-4xl);
+  font-size: var(--text-3xl);
 }
 
 /* section-9-grid */
@@ -47,17 +47,18 @@
 
 .section-9>.container>button {
   background-color: var(--dark);
-  font-size: var(--text-3xl);
+  font-size: var(--text-xxlg);
   font-weight: bold;
   color: var(--light);
-  padding: 20px 40px;
+  padding: 20px 30px;
   border-radius: 15px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 
 
-
-@media (max-width:1280px) {}
 
 @media (max-width:1024px) {
   .section-9-grid {
@@ -65,16 +66,8 @@
   }
 
   .section-9>.container>button {
-    font-size: var(--text-2xl);
-    padding: 15px 30px;
-  }
-
-}
-
-@media (max-width: 768px) {
-  .section-9>.container>button {
-    font-size: var(--text-xxlg);
-    padding: 15px 30px;
+    font-size: var(--text-xlg);
+    padding: 20px 30px;
   }
 
 }
@@ -89,7 +82,7 @@
   }
 
   .section-9>.container>h3 {
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
   }
 }
 

@@ -1,22 +1,17 @@
 /* case study section */
 .section-5 {
   background-color: var(--primary);
+  padding-top: 50px;
 }
 
-.section-5>.container>.heading {
-  padding: 30px 0;
-}
+.section-5>.container>.heading {}
 
 .client-b-container {
   background-color: var(--light);
 }
 
 
-.client-a-container>.container {
-  display: flex;
-  gap: 20px;
-}
-
+.client-a-container>.container,
 .client-b-container>.container {
   padding: 50px 0;
   display: grid;
@@ -30,6 +25,9 @@
   gap: 20px;
   flex-direction: column;
   padding: 20px 0;
+  height: fit-content;
+  position: sticky;
+  top: 80px;
 }
 
 .img-wrapper>img {
@@ -181,24 +179,24 @@
   border-bottom: 2px solid var(--primary);
 }
 
-.client-b-result-card {
+.casestudy-result-card {
   grid-column: span 2;
 
 }
 
-.client-b-result-card>.result {
+.casestudy-result-card>.result {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 20px;
 }
 
-.client-b-result-card>h3 {
+.casestudy-result-card>h3 {
   font-size: var(--text-lg);
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
-.client-b-result-card>.result>ul {
+.casestudy-result-card>.result>ul {
   font-weight: 600;
   background-color: var(--primary);
   width: fit-content;
@@ -216,18 +214,18 @@
   margin-bottom: 5px
 }
 
-.client-b-result-card>.result>ul>li {
+.casestudy-result-card>.result>ul>li {
   font-weight: 500;
   margin-left: 25px;
   list-style: disc;
   line-height: 25px;
 }
 
-.client-b-result-card>.result>ul>li>span {
+.casestudy-result-card>.result>ul>li>span {
   font-weight: 700;
 }
 
-.client-b-result-card>.result>div {
+.casestudy-result-card>.result>div {
   font-weight: 600;
   text-align: center;
 
@@ -280,31 +278,40 @@
   margin-bottom: 20px;
 }
 
+.casestudy-result {
+  background-color: var(--light);
+}
+
 
 
 /* Media query for small screen */
 @media (max-width: 768px) {
 
-  .client-a-container>.container {
-    flex-direction: column;
-  }
-
+  .client-a-container>.container,
   .client-b-container>.container {
     grid-template-columns: 1fr;
   }
 
-  .client-b-result-card>.result {
+
+
+  .img-wrapper {
+    position: static;
+  }
+
+
+
+  .casestudy-result-card>.result {
     flex-direction: column;
     justify-content: center;
   }
 
-  .client-b-result-card>.result>div {
+  .casestudy-result-card>.result>div {
     display: flex;
     height: 130px;
     align-items: center;
   }
 
-  .client-b-result-card>.result>div>img {
+  .casestudy-result-card>.result>div>img {
     rotate: 90deg;
   }
 

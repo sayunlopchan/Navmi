@@ -6,7 +6,6 @@ header {
   position: relative;
   z-index: 900;
   background-color: var(--primary);
-  /* Static background color */
 }
 
 header.fixed {
@@ -19,7 +18,6 @@ header.fixed {
   -webkit-backdrop-filter: blur(5px);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #f590326e;
-  /* Fixed background color */
 }
 
 
@@ -36,7 +34,7 @@ header .header-nav {
 
 header .nav>ul {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 header .nav ul li a {
