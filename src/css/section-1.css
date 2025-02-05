@@ -1,5 +1,7 @@
 .hero-section {
   margin: auto;
+
+  background: var(--primary);
 }
 
 .hero-section .container {

@@ -84,8 +84,8 @@ html {
 }
 
 body {
-  background: var(--primary);
-  /* max-width: 1960px; */
+  /* background: var(--primary); */
+  max-width: 1960px;
   min-width: 360px;
   margin: auto;
 }
@@ -123,17 +123,7 @@ body {
   margin-bottom: 20px;
 }
 
-<div class="para-container"><p>Hey there,
-I'm Aditya K., Founder & CEO of NAVMI Co.
- </p><p>To answer the question,
-let's travel back to 2018, when I first started my career as a business consultant,
- helping brands strategize and scale. But it wasn't until I was introduced to the world of email marketing that I
- truly found my passion. </p><p>What began as a role in email copywriting and sales strategy quickly became an important aspect of my life journey. Early days,
-I had the privilege of working with international e-commerce brands,
-guided by experts and immersing myself in the nuances of email marketing. </p><p id="extra-paragraph" style="display: none;">Then came the turning point,
-when I first analyzed the metrics,
-and it amazed me ! From that day,
-I knew this was my calling. I’ve since dedicated my career to helping brands unlock their true potential through email marketing. </p><button id="toggle-button">Learn More <img src="src/assets/SVG files/big-arrow.svg" alt="right-arrow"></button></div>.text-center {
+.text-center {
   text-align: center;
 }
 
@@ -204,8 +194,4 @@ I knew this was my calling. I’ve since dedicated my career to helping brands u
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s ease, visibility 0s;
-}
-
-section {
-  width: 100%;
 }
