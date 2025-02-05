@@ -91,11 +91,6 @@ body {
 }
 
 
-
-
-
-
-
 .text-white {
   color: var(--light);
 }
@@ -115,9 +110,9 @@ body {
 
 }
 
-.mtb-20 {
+/* .mtb-20 {
   margin: 20px 0;
-}
+} */
 
 .mb-20 {
   margin-bottom: 20px;
@@ -127,13 +122,9 @@ body {
   text-align: center;
 }
 
-.text-md {
-  font-size: var(--text-md);
-  line-height: 1rem;
-}
 
-.text-lg {
-  font-size: var(--text-xxlg);
+.ptb {
+  padding: 50px 0;
 }
 
 

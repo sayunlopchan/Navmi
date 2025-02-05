@@ -1,6 +1,6 @@
 /* section 3 */
 
-.result-section {
+.features {
   padding: 50px 0;
   background-color: var(--primary);
 }
@@ -64,18 +64,14 @@
 
 
 
-@media (max-width:1280px) {}
 
 
 @media (max-width:1024px) {
   .result-card-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
-/* Media query for small screen */
-@media (max-width: 768px) {}
 
 @media (max-width:640px) {
   .result-card-wrapper {
@@ -83,4 +79,8 @@
   }
 }
 
-@media (max-width:375px) {}
+@media (max-width:375px) {
+  .btn-wrapper>button {
+    font-size: var(--text-md);
+  }
+}
