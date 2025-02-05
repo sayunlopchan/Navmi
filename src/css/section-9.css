@@ -87,6 +87,14 @@
   .section-9>.container>button {
     font-size: var(--text-md);
   }
+
+  .section-9>.container>h3 {
+    font-size: var(--text-3xl);
+  }
 }
 
-@media (max-width:375px) {}
+@media (max-width:375px) {
+  .section-9>.container>h3 {
+    font-size: var(--text-xlg);
+  }
+}

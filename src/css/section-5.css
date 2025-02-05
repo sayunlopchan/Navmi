@@ -11,7 +11,6 @@
 
 .client-a-container>.container {
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
@@ -27,6 +26,7 @@
   display: flex;
   gap: 20px;
   flex-direction: column;
+  padding: 20px 0;
 }
 
 .img-wrapper>img {
@@ -38,7 +38,6 @@
 /* client details */
 
 .client-a-wrapper {
-  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -312,9 +311,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .review-card {
-    min-width: calc(100% - -30px);
-  }
 }
 
 @media (max-width:640px) {
@@ -332,11 +328,9 @@
 @media (max-width:375px) {
 
   /* growth card */
-  .growth-card-head>h4 {
-    font-size: var(--text-sm);
+
+  .growth-result-card-container {
+    grid-template-columns: 1fr;
   }
 
-  .growth-card p {
-    font-size: var(--text-sm);
-  }
 }

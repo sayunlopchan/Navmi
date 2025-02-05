@@ -35,6 +35,7 @@
     <script defer src="src/js/Menu.js"></script>
     <script defer src="src/js/slider.js"></script>
     <script defer src="src/js/headerScroll.js"></script>
+    <script defer src="src/js/showMore.js"></script>
 
   </head>
 
@@ -309,7 +310,7 @@
           <div class="banner-1">
             <div class="banner-heading">
               <h3>
-                Trusted By <span> Over 70</span> <br> E-commerce <span>Brands</span>
+                Trusted By <span> Over 70+</span> <br> E-commerce <span>Brands</span>
               </h3>
             </div>
             <ul>
@@ -578,10 +579,16 @@
 
 
       <section class="review-section section-7">
-        <div class="text-center mtb-20">
+
+        <!-- heading -->
+        <div class="heading mtb-20">
           <h2 class="sub-heading underline-black">
             Trusted Client Reviews</h2>
         </div>
+
+
+
+        <!-- slider -->
         <div class="container">
           <div class="review-container">
 
@@ -596,12 +603,12 @@
                   we!</p>
               </div>
               <div class="review-footer">
-                <div>
+                <div class="reviewer-detail-container">
                   <h3>Steven J.</h3>
                   <p>Co-founder & CMO</p>
                   <p>Pet Food & Care Industry</p>
                 </div>
-                <div class="starts">
+                <div class="stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -622,12 +629,12 @@
                   we!</p>
               </div>
               <div class="review-footer">
-                <div>
+                <div class="reviewer-detail-container">
                   <h3>Steven J.</h3>
                   <p>Co-founder & CMO</p>
                   <p>Pet Food & Care Industry</p>
                 </div>
-                <div class="starts">
+                <div class="stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -648,12 +655,12 @@
                   we!</p>
               </div>
               <div class="review-footer">
-                <div>
+                <div class="reviewer-detail-container">
                   <h3>Steven J.</h3>
                   <p>Co-founder & CMO</p>
                   <p>Pet Food & Care Industry</p>
                 </div>
-                <div class="starts">
+                <div class="stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -674,12 +681,12 @@
                   we!</p>
               </div>
               <div class="review-footer">
-                <div>
+                <div class="reviewer-detail-container">
                   <h3>Steven J.</h3>
                   <p>Co-founder & CMO</p>
                   <p>Pet Food & Care Industry</p>
                 </div>
-                <div class="starts">
+                <div class="stars">
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
@@ -690,10 +697,6 @@
             </div>
 
           </div>
-        </div>
-
-        <!-- Navigation Buttons -->
-        <div class="navigation-btn-container">
           <button class="slider-btn prev-btn">
             <i class="fa-solid fa-arrow-left"></i>
           </button>
@@ -701,6 +704,10 @@
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
+
+        <!-- Navigation Buttons -->
+
+
 
 
       </section>
@@ -815,24 +822,32 @@
               <p>
                 Hey there, I'm Aditya K., Founder & CEO of NAVMI Co.
               </p>
-              <p>To answer the question, let's travel back to 2018, when I first started my career as a business
-                consultant, helping brands strategize and scale. But it wasn't until I was introduced to the world of
-                email marketing that I truly found my passion.
+              <p>
+                To answer the question, let's travel back to 2018, when I first started my career as a business
+                consultant,
+                helping brands strategize and scale. But it wasn't until I was introduced to the world of email
+                marketing that I
+                truly found my passion.
               </p>
               <p>
                 What began as a role in email copywriting and sales strategy quickly became an important aspect of my
-                life journey. Early days, I had the privilege of working with international e-commerce brands, guided by
-                experts and immersing myself in the nuances of email marketing.
+                life journey.
+                Early days, I had the privilege of working with international e-commerce brands, guided by experts and
+                immersing
+                myself in the nuances of email marketing.
               </p>
-              <p>
-                Then came the turning point, when I first analyzed the metrics, and it amazed me!......
+              <p id="extra-paragraph" style="display: none;">
+                Then came the turning point, when I first analyzed the metrics, and it amazed me! From that day, I knew
+                this was
+                my calling. I’ve since dedicated my career to helping brands unlock their true potential through email
+                marketing.
               </p>
-
-              <button>
+              <button id="toggle-button">
                 Learn More
                 <img src="src/assets/SVG files/big-arrow.svg" alt="right-arrow">
               </button>
             </div>
+
             <div class="founder-img-wrapper">
               <img src="src/assets/Logo/AdityaImg.jpg" alt="AdityaImg">
               <div class="founder-detail-box">
