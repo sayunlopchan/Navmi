@@ -5,11 +5,13 @@ document.getElementById('toggle-button').addEventListener('click', function () {
 
   if (extraParagraph.style.display === 'none' || extraParagraph.style.display === '') {
     extraParagraph.style.display = 'block';
-    ellipsis.style.display = 'none'; // Hide the "......" when the full content is revealed
+    ellipsis.style.display = 'none';
+
     button.innerHTML = `Show Less <img src="src/assets/SVG files/big-arrow.svg" alt="right-arrow">`;
   } else {
     extraParagraph.style.display = 'none';
-    ellipsis.style.display = 'inline'; // Show the "......" when the content is hidden
+    ellipsis.style.display = 'inline';
+
     button.innerHTML = `Learn More <img src="src/assets/SVG files/big-arrow.svg" alt="right-arrow">`;
   }
 });

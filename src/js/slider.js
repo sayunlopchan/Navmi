@@ -2,13 +2,12 @@ const sliderContainer = document.querySelector('.review-container');
 const nextBtn = document.querySelector('.next-btn');
 const prevBtn = document.querySelector('.prev-btn');
 
-// Load scroll position from localStorage
+
 const savedScrollPosition = localStorage.getItem('scrollPosition');
 if (savedScrollPosition) {
   sliderContainer.scrollLeft = parseInt(savedScrollPosition, 10);
 }
 
-// Update button visibility based on initial scroll position
 prevBtn.style.display = sliderContainer.scrollLeft > 0 ? 'block' : 'none';
 const maxScrollLeft = sliderContainer.scrollWidth - sliderContainer.clientWidth;
 nextBtn.style.display = sliderContainer.scrollLeft >= maxScrollLeft ? 'none' : 'block';

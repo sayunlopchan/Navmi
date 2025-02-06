@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- fontaswm -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- fontaswm -->
-
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="src/css/header.css" />
@@ -41,14 +43,18 @@
     <script defer src="src/js/showMore.js"></script>
     <script defer src="src/js/formPopup.js"></script>
     <script defer src="src/animation/observer.js"></script>
-
   </head>
 
   <body>
     <header id="header">
       <div class="container header-nav">
         <a href="/">
-          <img src="src/assets/SVG files/navmi_logo.svg" alt="Navmi-email-icon" width="200" class="logo" />
+          <img
+            src="src/assets/SVG files/navmi_logo.svg"
+            alt="Navmi-email-icon"
+            width="200"
+            class="logo"
+          />
         </a>
         <nav class="nav">
           <ul>
@@ -70,14 +76,18 @@
           <div class="menu-line"></div>
         </div>
 
-        <!-- overlay -->
-        <div class="overlay" id="overlay"></div>
+        <!-- Menu Overlay -->
+        <div id="menuOverlay" class="overlay"></div>
 
         <!-- menu container -->
         <div class="menu-container" id="menuContainer">
           <!-- head -->
           <div class="menu-heading">
-            <img src="src/assets/SVG files/navmi_logo.svg" alt="navmi_logo" width="160px" />
+            <img
+              src="src/assets/SVG files/navmi_logo.svg"
+              alt="navmi_logo"
+              width="160px"
+            />
             <button>
               <i class="fa-solid fa-xmark" id="closeBtn"></i>
             </button>
@@ -107,19 +117,16 @@
             </button>
 
             <!-- footer-fotter -->
-
           </div>
         </div>
       </div>
     </header>
     <main>
-
-      <!-- Overlay -->
-      <div class="overlay"></div>
+      <!-- Popup Overlay -->
+      <div id="popupOverlay" class="overlay"></div>
 
       <!-- Popup Form -->
       <div class="popup-container">
-
         <button class="close-btn" onclick="closePopup()">
           <i class="fa-solid fa-x"></i>
         </button>
@@ -127,19 +134,25 @@
         <div class="popup-form">
           <div class="container">
             <div>
-
               <div class="info-section">
                 <span>
-                  <img src="/src/assets/SVG files/form-arrow.svg" alt="form-arrow">
+                  <img
+                    src="/src/assets/SVG files/form-arrow.svg"
+                    alt="form-arrow"
+                  />
                   How to Reach us?
                 </span>
                 <h2>Feel Free to Contact Us</h2>
                 <div class="info-texts">
-                  <h3>Apply Now for a Free 30 minutes consultation and email marketing audit.</h3>
-                  <p>Our expert audits will submit a detailed evaluation report of your email marketing strategies and
-                    walk
-                    you
-                    through how you can unlock the full potential of your e-commerce store.</p>
+                  <h3>
+                    Apply Now for a Free 30 minutes consultation and email
+                    marketing audit.
+                  </h3>
+                  <p>
+                    Our expert audits will submit a detailed evaluation report
+                    of your email marketing strategies and walk you through how
+                    you can unlock the full potential of your e-commerce store.
+                  </p>
                 </div>
               </div>
             </div>
@@ -149,45 +162,42 @@
               <div class="Personal-Details">
                 <div class="input-container">
                   <label for="firstname">First Name*</label>
-                  <input type="text">
+                  <input type="text" />
                 </div>
                 <div class="input-container">
                   <label for="lastname">Last Name*</label>
-                  <input type="text">
+                  <input type="text" />
                 </div>
-
               </div>
               <h3>Contact Details:</h3>
               <div class="Company-Details">
                 <div class="input-container">
                   <label for="emailAddress">Email Address*</label>
-                  <input type="email">
+                  <input type="email" />
                 </div>
                 <div class="input-container">
                   <label for="ContactNumber">Contact Number*</label>
-                  <input type="text">
+                  <input type="text" />
                 </div>
                 <div class="input-container">
                   <label for="companyName">Company Name*</label>
-                  <input type="email">
+                  <input type="email" />
                 </div>
                 <div class="input-container">
                   <label for="companyAddress">Company Addresss*</label>
-                  <input type="text">
+                  <input type="text" />
                 </div>
                 <div class="input-container">
                   <label for="companyWebsite">Company Website*</label>
-                  <input type="text">
+                  <input type="text" />
                 </div>
                 <div class="input-container">
                   <label for="companyRevenue">Company Revenue*</label>
-                  <input type="number">
+                  <input type="number" />
                 </div>
               </div>
               <button>Submit</button>
-
             </form>
-
           </div>
         </div>
       </div>
@@ -207,7 +217,7 @@
               We help high-growth DTC brands maximize their
               <strong>Email/SMS Revenue</strong>
               in
-              <br>just <strong>60 days!</strong>
+              <br />just <strong>60 days!</strong>
             </p>
             <p class="delay-slide-from-down-2">
               <strong>How'll we scale your ecommerce store?</strong>
@@ -215,180 +225,216 @@
 
             <button class="open-popup-btn delay-slide-from-down-2">
               <span>Let's talk Now</span>
-              <img src="src/assets/SVG files/right-arrow.svg" alt="right-arrow">
+              <img
+                src="src/assets/SVG files/right-arrow.svg"
+                alt="right-arrow"
+              />
             </button>
           </div>
-          <img class="delay-slide-from-top" src="/src/assets/SVG files/Namvi-hero.svg" alt="navmi_hero">
+
+          <img
+            class="delay-slide-from-top"
+            src="/src/assets/SVG files/Namvi-hero.svg"
+            alt="navmi_hero"
+          />
+        </div>
       </section>
 
       <section class="section-2" id="services">
         <div class="container">
           <div class="text-center mtb-20">
-            <h2 class="text-center sub-heading underline ">Our Services</h2>
+            <h2 class="text-center sub-heading underline">Our Services</h2>
           </div>
-          <div class="card-wrapper">
 
-            <div class="card ">
-              <img src="src/assets/Icons/services/Email-Marketing.png" alt="Email-Marketing">
+          <div class="card-wrapper">
+            <div class="card">
+              <img
+                src="src/assets/Icons/services/Email-Marketing.png"
+                alt="Email-Marketing"
+              />
               <div class="card-heading-wrapper">
                 <h3>Email Marketing</h3>
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
               <p>
-                We'll implement data-driven email strategies designed to nurture customer retention and drive
-                conversions
-                for your store. From automated flows to personalized campaigns, our email marketing solutions ensure
-                your
-                brand stays top-of-mind while delivering measurable results.
+                We'll implement data-driven email strategies designed to nurture
+                customer retention and drive conversions for your store. From
+                automated flows to personalized campaigns, our email marketing
+                solutions ensure your brand stays top-of-mind while delivering
+                measurable results.
               </p>
             </div>
-            <div class="card ">
-              <img src="src/assets/Icons/services/SMS-Marketing.png" alt="SMS-Marketing">
+            <div class="card">
+              <img
+                src="src/assets/Icons/services/SMS-Marketing.png"
+                alt="SMS-Marketing"
+              />
               <div class="card-heading-wrapper">
                 <h3>SMS Marketing</h3>
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
               <p>
-                Engage customers with timely, impactful SMS campaigns that drive action. With concise, targeted
-                messages,
-                we help you leverage SMS as a high-converting channel to complement your email strategy and maximize
-                customer engagement.</p>
+                Engage customers with timely, impactful SMS campaigns that drive
+                action. With concise, targeted messages, we help you leverage
+                SMS as a high-converting channel to complement your email
+                strategy and maximize customer engagement.
+              </p>
             </div>
-            <div class="card ">
-              <img src="src/assets/Icons/services/Email-Audit.png" alt="Email-Audit">
+            <div class="card">
+              <img
+                src="src/assets/Icons/services/Email-Audit.png"
+                alt="Email-Audit"
+              />
               <div class="card-heading-wrapper">
                 <h3>Free Audit</h3>
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
               <p>
-                Learn the full potential of your email marketing with a comprehensive, no-cost audit. We'll analyze your
-                current strategy, identify missed opportunities, and provide actionable recommendations to help you
-                scale
-                your revenue.
+                Learn the full potential of your email marketing with a
+                comprehensive, no-cost audit. We'll analyze your current
+                strategy, identify missed opportunities, and provide actionable
+                recommendations to help you scale your revenue.
               </p>
             </div>
-
           </div>
-        </div>
         </div>
       </section>
 
       <section class="features section-3">
         <div class="container">
-
-          <h2 class="text-center mb-20 sub-heading">Collaborating with NAVMI Emails!</h2>
+          <h2 class="text-center mb-20 sub-heading">
+            Collaborating with NAVMI Emails!
+          </h2>
           <div class="sub-heading-wrapper mb-20">
             <span></span>
-            <h3 class="text-white sub-sub-heading">
-              What to expect?
-            </h3>
+            <h3 class="text-white sub-sub-heading">What to expect?</h3>
             <span></span>
           </div>
 
-
           <div class="result-card-wrapper">
-
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/Email-Platform-Setup-Management.png"
-                alt="Email-Platform-Setup-Management">
+              <img
+                src="src/assets/Icons/expectation/Email-Platform-Setup-Management.png"
+                alt="Email-Platform-Setup-Management"
+              />
               <h4>Email Platform Setup & Management</h4>
               <p>
-                We'll set up and manage your Klaviyo (or preferred ESP) account, so you can focus on what you do
-                best—running your business.
+                We'll set up and manage your Klaviyo (or preferred ESP) account,
+                so you can focus on what you do best—running your business.
               </p>
             </div>
 
-
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/Team.png" alt="Team">
+              <img src="src/assets/Icons/expectation/Team.png" alt="Team" />
               <h4>A Dedicated Team</h4>
               <p>
-                Get a team of 6 email marketing experts assigned to work as an extension of your business and deliver
-                strategies that grow revenue.
+                Get a team of 6 email marketing experts assigned to work as an
+                extension of your business and deliver strategies that grow
+                revenue.
               </p>
             </div>
 
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/Email-SMS-Revenue-Growth.png" alt="Email-SMS-Revenue-Growth">
+              <img
+                src="src/assets/Icons/expectation/Email-SMS-Revenue-Growth.png"
+                alt="Email-SMS-Revenue-Growth"
+              />
               <h4>Email/SMS Revenue Growth</h4>
               <p>
-                Notice your e-commerce revenue scale up to 30% in just 60 days. That’s like ⅓ of your total revenue!
+                Notice your e-commerce revenue scale up to 30% in just 60 days.
+                That’s like ⅓ of your total revenue!
               </p>
             </div>
 
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/Automation-Strategy.png" alt="Automation-Strategy">
+              <img
+                src="src/assets/Icons/expectation/Automation-Strategy.png"
+                alt="Automation-Strategy"
+              />
               <h4>Email Automation & Strategy</h4>
               <p>
-                From welcome flows to abandoned carts, we design and implement automation strategies that drive revenue
-                on
-                autopilot.
+                From welcome flows to abandoned carts, we design and implement
+                automation strategies that drive revenue on autopilot.
               </p>
             </div>
 
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/Campaign-Creation-Strategy.png" alt="Campaign-Creation-Strategy">
+              <img
+                src="src/assets/Icons/expectation/Campaign-Creation-Strategy.png"
+                alt="Campaign-Creation-Strategy"
+              />
               <h4>Campaign Creation & Strategy</h4>
               <p>
-                Never wonder what to send next. We’ll provide monthly content calendars and handle full campaign
-                creation
-                for you.
+                Never wonder what to send next. We’ll provide monthly content
+                calendars and handle full campaign creation for you.
               </p>
             </div>
 
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/Personalized-Brand -Designs.png" alt="Personalized-Brand">
+              <img
+                src="src/assets/Icons/expectation/Personalized-Brand -Designs.png"
+                alt="Personalized-Brand"
+              />
               <h4>Personalized Brand Designs</h4>
               <p>
-                Your emails should look as good as your brand. We craft on-brand copy and create stunning,
-                conversion-focused templates tailored just for you.
+                Your emails should look as good as your brand. We craft on-brand
+                copy and create stunning, conversion-focused templates tailored
+                just for you.
               </p>
             </div>
 
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/AB testing.png" alt="Ab testing">
+              <img
+                src="src/assets/Icons/expectation/AB testing.png"
+                alt="Ab testing"
+              />
               <h4>A/B Testing & Metrics Tracking</h4>
               <p>
-                Our data-driven approach fine-tunes your campaigns and automations for maximum results.
+                Our data-driven approach fine-tunes your campaigns and
+                automations for maximum results.
               </p>
             </div>
 
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/segmentation-targeting.png" alt="segmentation-targeting">
+              <img
+                src="src/assets/Icons/expectation/segmentation-targeting.png"
+                alt="segmentation-targeting"
+              />
               <h4>Segmentation & Targeting</h4>
               <p>
-                Speak directly to your audience with a customized segmentation strategy that builds relationships and
-                drives sales.
+                Speak directly to your audience with a customized segmentation
+                strategy that builds relationships and drives sales.
               </p>
             </div>
 
             <div class="result-card">
-              <img src="src/assets/Icons/expectation/weekly reporting.png" alt="weekly reporting">
+              <img
+                src="src/assets/Icons/expectation/weekly reporting.png"
+                alt="weekly reporting"
+              />
               <h4>Weekly Reporting</h4>
               <p>
-                Stay connected with our team. Weekly calls keep you in the loop and ensure we’re always aligned with
-                your
-                goals.
+                Stay connected with our team. Weekly calls keep you in the loop
+                and ensure we’re always aligned with your goals.
               </p>
             </div>
-
           </div>
-
-
 
           <div class="btn-wrapper">
             <button class="open-popup-btn">
               Work with us
-              <img src="src/assets/SVG files/uplink-arrow.svg" alt="uplink-arrow" width="20px">
+              <img
+                src="src/assets/SVG files/uplink-arrow.svg"
+                alt="uplink-arrow"
+                width="20px"
+              />
             </button>
           </div>
         </div>
       </section>
 
-
       <section class="result-section-2 section-4">
         <div class="container">
-
           <div class="banner-1">
             <div class="banner-heading">
               <h3>
@@ -397,31 +443,41 @@
             </div>
             <ul>
               <li>
-                <img src="src/assets/Icons/industry/Beauty-Cosmetic-Industry.png" alt="Beauty-Cosmetic-Industry">
+                <img
+                  src="src/assets/Icons/industry/Beauty-Cosmetic-Industry.png"
+                  alt="Beauty-Cosmetic-Industry"
+                />
                 Beauty & Cosmetic Industry
               </li>
               <li>
-                <img src="src/assets/Icons/industry/Apparel-Accessory-Industry.png" alt="Apparel-Accessory-Industry">
+                <img
+                  src="src/assets/Icons/industry/Apparel-Accessory-Industry.png"
+                  alt="Apparel-Accessory-Industry"
+                />
                 Apparel & Accessory Industry
               </li>
               <li>
-                <img src="src/assets/Icons/industry/Pet-Food-Care-Industry.png" alt="Pet-Food-Care-Industry">
+                <img
+                  src="src/assets/Icons/industry/Pet-Food-Care-Industry.png"
+                  alt="Pet-Food-Care-Industry"
+                />
                 Pet Food & Care Industry
               </li>
               <li>
-                <img src="src/assets/Icons/industry/CPG -ndustry.png" alt="CPG Industry">
+                <img
+                  src="src/assets/Icons/industry/CPG -ndustry.png"
+                  alt="CPG Industry"
+                />
                 CPG Industry
               </li>
             </ul>
           </div>
 
-
           <div class="text-center ptb">
             <h2 class="sub-heading mtb-20 underline">Results</h2>
           </div>
 
-
-          <div class="banner-2 ">
+          <div class="banner-2">
             <div class="box">
               <h4>$40M+</h4>
               <p>Revenue Added</p>
@@ -441,22 +497,25 @@
           </div>
 
           <h6 class="text-center">*Data as of 2024</h6>
-
         </div>
       </section>
-
 
       <section class="case-study-section section-5">
         <div class="text-center heading">
           <h2 class="sub-heading underline-black">Case Studies</h2>
         </div>
 
-
         <div class="client-a-container">
           <div class="container">
             <div class="img-wrapper">
-              <img src="src/assets/Case Studies/CS01IMG01.png" alt="client-A-case-study">
-              <img src="src/assets/Case Studies/CS01IMG02.png" alt="client-A-case-study">
+              <img
+                src="src/assets/Case Studies/CS01IMG01.png"
+                alt="client-A-case-study"
+              />
+              <img
+                src="src/assets/Case Studies/CS01IMG02.png"
+                alt="client-A-case-study"
+              />
             </div>
 
             <div class="client-a-wrapper">
@@ -465,28 +524,33 @@
                 <p><i>Beauty & Cosmetic Industry</i></p>
               </div>
               <div class="client-a-body">
-                <p> Before collaborating with NAVMI, Client A relied on email marketing as a supplementary revenue
-                  channel but never realized its full potential. After implementing our customized strategies, Client
-                  A
-                  experienced remarkable growth:</p>
+                <p>
+                  Before collaborating with NAVMI, Client A relied on email
+                  marketing as a supplementary revenue channel but never
+                  realized its full potential. After implementing our customized
+                  strategies, Client A experienced remarkable growth:
+                </p>
                 <ul class="client-a-list">
                   <li>
-                    <span>June 2024:</span> Email revenue surged to $26,142.08, contributing 18% of total revenue—a
-                    240% increase
-                    compared to the previous period.
+                    <span>June 2024:</span> Email revenue surged to $26,142.08,
+                    contributing 18% of total revenue—a 240% increase compared
+                    to the previous period.
                   </li>
                   <li>
-                    <span>June 2024:</span> Revenue from emails jumped to $42,074.94, now representing 32% of total
-                    sales—a
-                    staggering 652% growth.
+                    <span>June 2024:</span> Revenue from emails jumped to
+                    $42,074.94, now representing 32% of total sales—a staggering
+                    652% growth.
                   </li>
                 </ul>
                 <div class="grwoth-detail-wrapper">
-
                   <div class="grwoth-detail">
                     <div class="grwoth-head">
                       <h3>+60%</h3>
-                      <img src="src/assets/SVG files/up-growth.svg" alt="up-growth" width="50px">
+                      <img
+                        src="src/assets/SVG files/up-growth.svg"
+                        alt="up-growth"
+                        width="50px"
+                      />
                     </div>
                     <p>
                       Increase In Email Attributed Revenue
@@ -497,20 +561,25 @@
                   <div class="grwoth-detail">
                     <div class="grwoth-head">
                       <h3>+58%</h3>
-                      <img src="src/assets/SVG files/up-growth.svg" alt="up-growth" width="50px">
+                      <img
+                        src="src/assets/SVG files/up-growth.svg"
+                        alt="up-growth"
+                        width="50px"
+                      />
                     </div>
                     <p>
                       Increase In Email Revenue Per Recipient
                       <span>(in 60 days)</span>
                     </p>
                   </div>
-
                 </div>
               </div>
               <div class="client-a-footer">
-                <p>In just 60 days, our targeted flows and high-performing campaigns turned email marketing a
-                  primary revenue driver for Client A, helping them build stronger customer retention and achieve
-                  significant sales.
+                <p>
+                  In just 60 days, our targeted flows and high-performing
+                  campaigns turned email marketing a primary revenue driver for
+                  Client A, helping them build stronger customer retention and
+                  achieve significant sales.
                 </p>
               </div>
             </div>
@@ -519,41 +588,53 @@
 
         <div class="client-b-container">
           <div class="container">
-
             <div class="client-b-wrapper">
               <div class="client-b-head">
                 <h4>Client B</h4>
                 <p><i>CPG Industry</i></p>
-                <p class="client-b-bold">From 5% to 46%: Turning Emails into Revenue Generators</p>
+                <p class="client-b-bold">
+                  From 5% to 46%: Turning Emails into Revenue Generators
+                </p>
               </div>
               <div class="client-b-body">
                 <div>
-                  <p>Client B, a thriving CPG brand, faced a significant challenge: email marketing contributed a mere
-                    5%
-                    of their total revenue. They lacked a cohesive strategy and proper segmentation, resulting in
-                    underutilized email potential. Their existing flows were outdated, and campaign performance was
-                    stagnant, leaving much space for improvement.</p>
+                  <p>
+                    Client B, a thriving CPG brand, faced a significant
+                    challenge: email marketing contributed a mere 5% of their
+                    total revenue. They lacked a cohesive strategy and proper
+                    segmentation, resulting in underutilized email potential.
+                    Their existing flows were outdated, and campaign performance
+                    was stagnant, leaving much space for improvement.
+                  </p>
                 </div>
                 <h3>How We HELPED?</h3>
-                <p>We designed a comprehensive, data-driven email marketing strategy to maximize revenue: </p>
+                <p>
+                  We designed a comprehensive, data-driven email marketing
+                  strategy to maximize revenue:
+                </p>
                 <ul class="client-b-list">
                   <li>
                     Optimized Flows:
                     <span>
-                      Revamped all automated flows, including the Welcome Series, Abandoned Cart, and Post-Purchase
-                      sequences, to create personalized, conversion-focused experiences.</span>
+                      Revamped all automated flows, including the Welcome
+                      Series, Abandoned Cart, and Post-Purchase sequences, to
+                      create personalized, conversion-focused experiences.</span
+                    >
                   </li>
                   <li>
                     Targeted Campaigns:
                     <span>
-                      Implemented a segmented campaign strategy that delivered tailored content and offers to the right
-                      audiences at the right time.</span>
+                      Implemented a segmented campaign strategy that delivered
+                      tailored content and offers to the right audiences at the
+                      right time.</span
+                    >
                   </li>
                   <li>
                     Analytics & Evaluation:
                     <span>
-                      Conducted regular A/B testing and leveraged advanced analytics
-                      to continuously refine subject lines, content, and timing.
+                      Conducted regular A/B testing and leveraged advanced
+                      analytics to continuously refine subject lines, content,
+                      and timing.
                     </span>
                   </li>
                 </ul>
@@ -561,8 +642,14 @@
             </div>
 
             <div class="img-wrapper">
-              <img src="src/assets/Case Studies/CS02IMG01.png" alt="CS02IMG01">
-              <img src="src/assets/Case Studies/CS02IMG02.png" alt="CS02IMG02">
+              <img
+                src="src/assets/Case Studies/CS02IMG01.png"
+                alt="CS02IMG01"
+              />
+              <img
+                src="src/assets/Case Studies/CS02IMG02.png"
+                alt="CS02IMG02"
+              />
             </div>
           </div>
         </div>
@@ -575,28 +662,41 @@
                 <ul>
                   <p>May 2024 - June 2024 (Baseline):</p>
                   <li>Total Revenue: <span>$162,040.76</span></li>
-                  <li>Email Revenue: <span> $34,028.56</span> (21% of total revenue)</li>
+                  <li>
+                    Email Revenue: <span> $34,028.56</span> (21% of total
+                    revenue)
+                  </li>
                   <li>Revenue Per Recipient: <span>$0.18</span></li>
                 </ul>
                 <div>
                   <p>After</p>
-                  <img src="src/assets/SVG files/big-arrow.svg" alt="big-arrow" width="100px">
+                  <img
+                    src="src/assets/SVG files/big-arrow.svg"
+                    alt="big-arrow"
+                    width="100px"
+                  />
                   <p>6 Months</p>
                 </div>
                 <ul>
                   <p>October 2024 - November 2024:</p>
                   <li>Total Revenue: <span>$179,478.84</span></li>
-                  <li>Email Revenue: <span> $82,560.26</span> (46% of total revenue) </li>
+                  <li>
+                    Email Revenue: <span> $82,560.26</span> (46% of total
+                    revenue)
+                  </li>
                   <li>Revenue Per Recipient: <span>$0.38</span></li>
                 </ul>
               </div>
 
               <div class="growth-result-card-container">
-
                 <div class="growth-card">
                   <div class="growth-card-head">
                     <h4>+142%</h4>
-                    <img src="src/assets/SVG files/up-growth.svg" alt="up-growth" width="50px">
+                    <img
+                      src="src/assets/SVG files/up-growth.svg"
+                      alt="up-growth"
+                      width="50px"
+                    />
                   </div>
                   <p>
                     Increase In Email Attributed Revenue
@@ -607,7 +707,11 @@
                 <div class="growth-card">
                   <div class="growth-card-head">
                     <h4>+204%</h4>
-                    <img src="src/assets/SVG files/up-growth.svg" alt="up-growth" width="50px">
+                    <img
+                      src="src/assets/SVG files/up-growth.svg"
+                      alt="up-growth"
+                      width="50px"
+                    />
                   </div>
                   <p>
                     Increase In Flow Revenue
@@ -618,7 +722,11 @@
                 <div class="growth-card">
                   <div class="growth-card-head">
                     <h4>+97%</h4>
-                    <img src="src/assets/SVG files/up-growth.svg" alt="up-growth" width="50px">
+                    <img
+                      src="src/assets/SVG files/up-growth.svg"
+                      alt="up-growth"
+                      width="50px"
+                    />
                   </div>
                   <p>
                     Increase In Campaign Revenue
@@ -629,7 +737,11 @@
                 <div class="growth-card">
                   <div class="growth-card-head">
                     <h4>+110%</h4>
-                    <img src="src/assets/SVG files/up-growth.svg" alt="up-growth" width="50px">
+                    <img
+                      src="src/assets/SVG files/up-growth.svg"
+                      alt="up-growth"
+                      width="50px"
+                    />
                   </div>
                   <p>
                     Increase In Email Revenue Per Recipient
@@ -640,49 +752,50 @@
 
               <div class="QA-div">
                 <h4>Why It Matters?</h4>
-                <p>By implementing a structured email marketing strategy, we helped Client B turn emails into a powerful
-                  revenue channel. Today, email contributes 46% of their total sales, proving that a strategic approach
-                  can transform under performing marketing channels into consistent growth drivers.</p>
+                <p>
+                  By implementing a structured email marketing strategy, we
+                  helped Client B turn emails into a powerful revenue channel.
+                  Today, email contributes 46% of their total sales, proving
+                  that a strategic approach can transform under performing
+                  marketing channels into consistent growth drivers.
+                </p>
               </div>
             </div>
           </div>
         </div>
-
       </section>
-
-
 
       <section class="banner-3 section-6">
         <div class="container">
           <h3>Your brand could achieve similar results!</h3>
           <button class="open-popup-btn">
             Let's Scale Your Ecommerce Store Together
-            <img src="src/assets/SVG files/btn-crusor.svg" alt="btn-crusor">
+            <img src="src/assets/SVG files/btn-crusor.svg" alt="btn-crusor" />
           </button>
         </div>
       </section>
 
-
       <section class="review-section section-7">
-
         <!-- heading -->
         <div class="text-center heading mtb-20">
-          <h2 class=" sub-heading underline-black">
-            Trusted Client Reviews</h2>
+          <h2 class="sub-heading underline-black">Trusted Client Reviews</h2>
         </div>
         <!-- slider -->
         <div class="container">
           <div class="review-container">
-
             <div class="review-card">
               <div class="review-head">
-                <img src="src/assets/SVG files/google.svg" alt="google-icon">
+                <img src="src/assets/SVG files/google.svg" alt="google-icon" />
               </div>
               <div class="review-body">
-                <p>I didn't realize how much revenue we were leaving on the table until NAVMI Emails helped us. They
-                  segmented our audience in ways we hadn’t thought of and built flows, campaigns that performed amazing.
-                  In just two months, email became our highest-performing channel. Our customers are happier, and so are
-                  we!</p>
+                <p>
+                  I didn't realize how much revenue we were leaving on the table
+                  until NAVMI Emails helped us. They segmented our audience in
+                  ways we hadn’t thought of and built flows, campaigns that
+                  performed amazing. In just two months, email became our
+                  highest-performing channel. Our customers are happier, and so
+                  are we!
+                </p>
               </div>
               <div class="review-footer">
                 <div class="reviewer-detail-container">
@@ -702,13 +815,16 @@
 
             <div class="review-card">
               <div class="review-head">
-                <img src="src/assets/SVG files/google.svg" alt="google-icon">
+                <img src="src/assets/SVG files/google.svg" alt="google-icon" />
               </div>
               <div class="review-body">
                 <p>
-                  We've tried working with agencies before, but the NAVMI Co. was on a different level. Their team
-                  really understood our voice and audience. The abandoned cart flow they built recovered more sales in
-                  the first month than we expected. Plus, their weekly reports helped us stay on track with our goals!
+                  We've tried working with agencies before, but the NAVMI Co.
+                  was on a different level. Their team really understood our
+                  voice and audience. The abandoned cart flow they built
+                  recovered more sales in the first month than we expected.
+                  Plus, their weekly reports helped us stay on track with our
+                  goals!
                 </p>
               </div>
               <div class="review-footer">
@@ -729,13 +845,17 @@
 
             <div class="review-card">
               <div class="review-head">
-                <img src="src/assets/SVG files/google.svg" alt="google-icon">
+                <img src="src/assets/SVG files/google.svg" alt="google-icon" />
               </div>
               <div class="review-body">
-                <p>I didn't realize how much revenue we were leaving on the table until NAVMI Emails helped us. They
-                  segmented our audience in ways we hadn’t thought of and built flows, campaigns that performed amazing.
-                  In just two months, email became our highest-performing channel. Our customers are happier, and so are
-                  we!</p>
+                <p>
+                  I didn't realize how much revenue we were leaving on the table
+                  until NAVMI Emails helped us. They segmented our audience in
+                  ways we hadn’t thought of and built flows, campaigns that
+                  performed amazing. In just two months, email became our
+                  highest-performing channel. Our customers are happier, and so
+                  are we!
+                </p>
               </div>
               <div class="review-footer">
                 <div class="reviewer-detail-container">
@@ -755,13 +875,17 @@
 
             <div class="review-card">
               <div class="review-head">
-                <img src="src/assets/SVG files/google.svg" alt="google-icon">
+                <img src="src/assets/SVG files/google.svg" alt="google-icon" />
               </div>
               <div class="review-body">
-                <p>I didn't realize how much revenue we were leaving on the table until NAVMI Emails helped us. They
-                  segmented our audience in ways we hadn’t thought of and built flows, campaigns that performed amazing.
-                  In just two months, email became our highest-performing channel. Our customers are happier, and so are
-                  we!</p>
+                <p>
+                  I didn't realize how much revenue we were leaving on the table
+                  until NAVMI Emails helped us. They segmented our audience in
+                  ways we hadn’t thought of and built flows, campaigns that
+                  performed amazing. In just two months, email became our
+                  highest-performing channel. Our customers are happier, and so
+                  are we!
+                </p>
               </div>
               <div class="review-footer">
                 <div class="reviewer-detail-container">
@@ -778,7 +902,6 @@
                 </div>
               </div>
             </div>
-
           </div>
           <button class="slider-btn prev-btn">
             <i class="fa-solid fa-arrow-left"></i>
@@ -792,11 +915,10 @@
       <!-- banner-4 -->
       <section class="banner-4 section-8">
         <div class="container">
-          <h3>Apply for a <span>FREE Consultation</span> </h3>
+          <h3>Apply for a <span>FREE Consultation</span></h3>
           <p>
-            100% of our clients saw at least a <span>15% increase</span> in their email revenue after the first month of
-            working
-            with us.
+            100% of our clients saw at least a <span>15% increase</span> in
+            their email revenue after the first month of working with us.
           </p>
           <button class="open-popup-btn">
             <i class="fa-solid fa-phone-volume"></i>
@@ -805,87 +927,118 @@
         </div>
       </section>
 
-
       <section class="section-9">
         <div class="container">
           <h3>What Email Audit Includes?</h3>
           <div class="section-9-grid">
-
-
             <div class="section-9-card">
               <div class="card-head">
-                <img src="src/assets/Icons/check.png" alt="check" width="30px" height="30px">
+                <img
+                  src="src/assets/Icons/check.png"
+                  alt="check"
+                  width="30px"
+                  height="30px"
+                />
                 <h4>Performance Analysiss</h4>
               </div>
               <p>
-                A detailed review of your current email marketing performance, including metrics like open rates,
-                click-through rates, and conversion rates.
+                A detailed review of your current email marketing performance,
+                including metrics like open rates, click-through rates, and
+                conversion rates.
               </p>
             </div>
 
             <div class="section-9-card">
               <div class="card-head">
-                <img src="src/assets/Icons/check.png" alt="check" width="30px" height="30px">
+                <img
+                  src="src/assets/Icons/check.png"
+                  alt="check"
+                  width="30px"
+                  height="30px"
+                />
                 <h4>Deliverability Check</h4>
               </div>
               <p>
-                An evaluation of your email deliverability health to ensure your emails land in inboxes, not spam
-                folders.
+                An evaluation of your email deliverability health to ensure your
+                emails land in inboxes, not spam folders.
               </p>
             </div>
 
             <div class="section-9-card">
               <div class="card-head">
-                <img src="src/assets/Icons/check.png" alt="check" width="30px" height="30px">
+                <img
+                  src="src/assets/Icons/check.png"
+                  alt="check"
+                  width="30px"
+                  height="30px"
+                />
                 <h4>Flow/Campaign Optimization</h4>
               </div>
               <p>
-                Expert feedback on your automated email flows and campaigns, identifying gaps and opportunities to boost
-                engagement and revenue.
+                Expert feedback on your automated email flows and campaigns,
+                identifying gaps and opportunities to boost engagement and
+                revenue.
               </p>
             </div>
 
             <div class="section-9-card">
               <div class="card-head">
-                <img src="src/assets/Icons/check.png" alt="check" width="30px" height="30px">
+                <img
+                  src="src/assets/Icons/check.png"
+                  alt="check"
+                  width="30px"
+                  height="30px"
+                />
                 <h4>Segmentation Strategy Review</h4>
               </div>
               <p>
-                Insights into how your audience is segmented and recommendations for creating more personalized and
-                effective campaigns.
+                Insights into how your audience is segmented and recommendations
+                for creating more personalized and effective campaigns.
               </p>
             </div>
 
             <div class="section-9-card">
               <div class="card-head">
-                <img src="src/assets/Icons/check.png" alt="check" width="30px" height="30px">
+                <img
+                  src="src/assets/Icons/check.png"
+                  alt="check"
+                  width="30px"
+                  height="30px"
+                />
                 <h4>Content & Design Recommendations</h4>
               </div>
               <p>
-                A critique of your email copy and design with actionable suggestions to align with your brand and
-                maximize conversions..
+                A critique of your email copy and design with actionable
+                suggestions to align with your brand and maximize conversions..
               </p>
             </div>
 
             <div class="section-9-card">
               <div class="card-head">
-                <img src="src/assets/Icons/check.png" alt="check" width="30px" height="30px">
+                <img
+                  src="src/assets/Icons/check.png"
+                  alt="check"
+                  width="30px"
+                  height="30px"
+                />
                 <h4>Revenue Opportunities</h4>
               </div>
               <p>
-                Identification of missed revenue opportunities and strategies to unlock your email marketing's full
-                potential.
+                Identification of missed revenue opportunities and strategies to
+                unlock your email marketing's full potential.
               </p>
             </div>
-
           </div>
 
           <button class="open-popup-btn">
             GET FREE CONSULTATION
-            <img src="src/assets/SVG files/uplink-arrow.svg" alt="uplink-arrow">
+            <img
+              src="src/assets/SVG files/uplink-arrow.svg"
+              alt="uplink-arrow"
+            />
           </button>
+        </div>
       </section>
-
 
       <section class="section-10">
         <div class="container">
@@ -895,37 +1048,41 @@
           </div>
           <div class="founder-box">
             <div class="para-container">
+              <p>Hey there, I'm Aditya K., Founder & CEO of NAVMI Co.</p>
               <p>
-                Hey there, I'm Aditya K., Founder & CEO of NAVMI Co.
+                To answer the question, let's travel back to 2018, when I first
+                started my career as a business consultant, helping brands
+                strategize and scale. But it wasn't until I was introduced to
+                the world of email marketing that I truly found my passion.
               </p>
               <p>
-                To answer the question, let's travel back to 2018, when I first started my career as a business
-                consultant, helping brands strategize and scale. But it wasn't until I was introduced to the world of
-                email marketing that I truly found my passion.
+                What began as a role in email copywriting and sales strategy
+                quickly became an important aspect of my life journey. Early
+                days, I had the privilege of working with international
+                e-commerce brands, guided by experts and immersing myself in the
+                nuances of email marketing.
               </p>
               <p>
-                What began as a role in email copywriting and sales strategy quickly became an important aspect of my
-                life journey. Early days, I had the privilege of working with international e-commerce brands, guided by
-                experts and immersing myself in the nuances of email marketing.
+                Then came the turning point, when I first analyzed the metrics,
+                and it amazed me! <span id="ellipsis">......</span>
               </p>
-              <p>
-                Then came the turning point, when I first analyzed the metrics, and it amazed me! <span
-                  id="ellipsis">......</span>
-              </p>
-              <p id="extra-paragraph" style="display: none;">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta vitae fugit nam rerum corporis
-                ducimus pariatur iure quisquam facere neque necessitatibus maxime earum autem nihil nisi porro ratione,
-                consequatur fuga!
+              <p id="extra-paragraph" style="display: none">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                vitae fugit nam rerum corporis ducimus pariatur iure quisquam
+                facere neque necessitatibus maxime earum autem nihil nisi porro
+                ratione, consequatur fuga!
               </p>
               <button id="toggle-button">
                 Learn More
-                <img src="src/assets/SVG files/big-arrow.svg" alt="right-arrow">
+                <img
+                  src="src/assets/SVG files/big-arrow.svg"
+                  alt="right-arrow"
+                />
               </button>
             </div>
 
-
             <div class="founder-img-wrapper">
-              <img src="src/assets/Logo/AdityaImg.jpg" alt="AdityaImg">
+              <img src="src/assets/Logo/AdityaImg.jpg" alt="AdityaImg" />
               <div class="founder-detail-box">
                 <h4>Aditya K.</h4>
                 <p>Founder & CEO NAVMI Co.</p>
@@ -938,9 +1095,8 @@
 
     <footer>
       <div class="footer-container">
-
         <div class="footer-logo">
-          <img src="src/assets/SVG files/footer-logo.svg" alt="footer-logo">
+          <img src="src/assets/SVG files/footer-logo.svg" alt="footer-logo" />
         </div>
 
         <div class="footer-links">
@@ -967,23 +1123,29 @@
           <h3>Contact us</h3>
           <div class="social-link-wrapper">
             <a href="#">
-              <img src="src/assets/SVG files/linkedin-icon.svg" alt="linkedin-icon">
+              <img
+                src="src/assets/SVG files/linkedin-icon.svg"
+                alt="linkedin-icon"
+              />
             </a>
             <a href="#">
-              <img src="src/assets/SVG files/instagram-icon.svg" alt="instagram-icon">
+              <img
+                src="src/assets/SVG files/instagram-icon.svg"
+                alt="instagram-icon"
+              />
             </a>
             <a href="#">
-              <img src="src/assets/SVG files/facebook-icon.svg" alt="facebook-icon">
+              <img
+                src="src/assets/SVG files/facebook-icon.svg"
+                alt="facebook-icon"
+              />
             </a>
           </div>
         </div>
-
       </div>
       <div class="footer-footer">
         <span>NAVMI © 2025</span>
       </div>
-
     </footer>
   </body>
-
 </html>
