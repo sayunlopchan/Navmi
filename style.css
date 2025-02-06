@@ -80,16 +80,22 @@ h6 {
   font-family: var(--heading-font);
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  /* background: var(--primary); */
   max-width: 1960px;
   min-width: 360px;
   margin: auto;
 }
+
 
 
 .text-white {
