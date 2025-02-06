@@ -154,8 +154,6 @@ header .contactBtn>i {
 
 /* Media query for small screen */
 @media (max-width: 991px) {
-
-
   header .nav {
     display: none;
   }
@@ -165,10 +163,8 @@ header .contactBtn>i {
   }
 }
 
-@media (max-width: 768px) {}
 
-@media (max-width: 668px) {
-
+@media (max-width: 576px) {
   header .contactBtn {
     display: none;
   }
