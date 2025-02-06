@@ -233,6 +233,9 @@ body {
   cursor: pointer;
   border-radius: 5px;
   float: right;
+  position: sticky;
+  top: 0;
+  right: 0;
 }
 
 

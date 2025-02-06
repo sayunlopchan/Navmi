@@ -37,6 +37,12 @@ header .nav>ul {
   gap: 20px;
 }
 
+.nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 header .nav ul li a {
   font-size: medium;
   color: var(--dark);
@@ -132,13 +138,9 @@ header .contactBtn>i {
   align-items: center;
 }
 
-.menu-footer>p {
-  width: 80%;
-  text-align: center;
-  font-size: small;
-}
 
 .menu-contact-btn {
+  margin-top: 20px;
   font-size: medium;
   padding: 10px 25px;
   border-radius: 20px;
@@ -151,14 +153,23 @@ header .contactBtn>i {
 }
 
 /* Media query for small screen */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 
-  header .nav,
-  header .contactBtn {
+
+  header .nav {
     display: none;
   }
 
   .menu {
     display: block;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 668px) {
+
+  header .contactBtn {
+    display: none;
   }
 }
