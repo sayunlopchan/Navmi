@@ -42,7 +42,7 @@
 
 
 .banner-heading>h3 {
-  text-align: center;
+  text-align: start;
   font-size: var(--text-3xl);
   font-weight: 500;
 }
@@ -132,6 +132,10 @@ h6 {
 
   .banner-heading {
     width: 100%;
+  }
+
+  .banner-heading>h3 {
+    text-align: center;
   }
 
 

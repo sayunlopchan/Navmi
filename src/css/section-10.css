@@ -41,7 +41,7 @@
 }
 
 .para-container>p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: var(--text-md);
 }
@@ -90,7 +90,8 @@
 }
 
 .founder-detail-box>h4 {
-  font-size: var(--text-3xl);
+  margin-top: 20px;
+  font-size: var(--text-2xl);
   font-weight: bold;
 }
 

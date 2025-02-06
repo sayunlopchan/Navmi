@@ -49,7 +49,6 @@
   --text-6xl: 4.5rem;
   /* 72px */
 
-
 }
 
 
@@ -80,7 +79,8 @@ h6 {
   font-family: var(--heading-font);
 }
 
-button {
+button,
+a {
   -webkit-tap-highlight-color: transparent;
   outline: none;
 }

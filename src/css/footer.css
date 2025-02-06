@@ -1,9 +1,12 @@
+footer {
+  background-color: var(--primary);
+}
+
 .footer-container {
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
-  padding: 50px 10px;
-  background-color: var(--primary);
+  padding: 50px 0;
 }
 
 .footer-logo>img {
@@ -19,7 +22,6 @@
   color: inherit;
   font-size: var(--text-sm);
 }
-
 
 
 .footer-footer {
