@@ -100,6 +100,5 @@
 @media (max-width:375px) {
   .btn-wrapper>button {
     font-size: var(--text-md);
-    /* padding: 15px 20px; */
   }
 }

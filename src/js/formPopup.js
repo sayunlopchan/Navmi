@@ -4,7 +4,7 @@ const closePopupBtn = document.querySelector('.close-btn');
 const popupContainer = document.querySelector('.popup-container');
 const formoverlay = document.querySelector('.overlay');
 
-// Open popup for multiple buttons
+
 openPopupBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     popupContainer.classList.add('show');
@@ -12,7 +12,7 @@ openPopupBtns.forEach((btn) => {
   });
 });
 
-// Close popup
+
 const closePopup = () => {
   popupContainer.classList.remove('show');
   overlay.classList.remove('show');

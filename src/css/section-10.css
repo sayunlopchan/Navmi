@@ -101,7 +101,6 @@
 
 
 
-@media (max-width:1280px) {}
 
 @media (max-width:1024px) {
   .founder-box {
@@ -123,9 +122,3 @@
   }
 
 }
-
-@media (max-width: 768px) {}
-
-@media (max-width:640px) {}
-
-@media (max-width:375px) {}

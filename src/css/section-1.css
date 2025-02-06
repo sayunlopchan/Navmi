@@ -18,26 +18,34 @@ h1 {
 
 .text-md {
   font-size: var(--text-md);
-  line-height: 1rem;
 }
 
 .text-lg {
   font-size: var(--text-xxlg);
 }
 
-
 .hero-section img {
   width: 100%;
-  max-width: 800px;
 }
 
-h1>strong {
+span>strong {
   font-size: var(--text-2xl);
 }
 
-
 .hero-highlight-container>p {
   color: var(--dark);
+}
+
+.hero-highlight-container>p:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.hero-highlight-container>p:nth-child(3) {
+  margin-top: 10px;
+}
+
+.hero-highlight-container>p:nth-child(4),
+.hero-highlight-container>p:nth-child(5) {
   margin-top: 20px;
 }
 
@@ -48,21 +56,16 @@ h1>strong {
   background-color: var(--dark);
   padding: 15px 10px;
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center;
+  display: flex;
+  gap: 10px;
   font-size: var(--text-sm);
 }
 
-
 .hero-highlight-container button>img {
-  height: 10px;
+  width: 45px;
 }
 
-
-
-/* Media query for small screen */
+/* Media query for small screens */
 @media (max-width: 768px) {
   .hero-section>.container {
     grid-template-columns: 1fr;
@@ -77,5 +80,11 @@ h1>strong {
   .hero-section>img {
     order: 1;
   }
+}
 
+/* Media query for extra small screens */
+@media (max-width: 375px) {
+  h1 {
+    margin-bottom: 20px;
+  }
 }

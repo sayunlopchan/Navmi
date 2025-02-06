@@ -24,3 +24,8 @@ menuLinks.forEach(link => {
     overlay.classList.remove('show');
   });
 });
+
+overlay.addEventListener('click', () => {
+  menuContainer.style.right = '-360px';
+  overlay.classList.remove('show');
+});

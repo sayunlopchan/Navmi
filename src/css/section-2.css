@@ -54,7 +54,12 @@
 }
 
 
-/* Media query for small screen */
+@media (max-width: 1024px) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .card-wrapper {
     grid-template-columns: 1fr;

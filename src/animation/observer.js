@@ -25,7 +25,7 @@ const observer = new IntersectionObserver((entries) => {
       handleAnimationClasses(entry.target, 'remove');
     }
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.1 });
 
 // Function to force reflow (ensures animation triggers)
 const forceReflow = () => document.body.offsetHeight;

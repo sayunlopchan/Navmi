@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="src/css/section-9.css" />
     <link rel="stylesheet" href="src/css/section-10.css" />
     <link rel="stylesheet" href="src/css/footer.css" />
+    <link rel="stylesheet" href="src/css/popupform.css" />
+    <link rel="stylesheet" href="src/animation/observer.css" />
 
     <link rel="stylesheet" href="index.css" />
 
@@ -38,13 +40,16 @@
     <script defer src="src/js/headerScroll.js"></script>
     <script defer src="src/js/showMore.js"></script>
     <script defer src="src/js/formPopup.js"></script>
+    <script defer src="src/animation/observer.js"></script>
 
   </head>
 
   <body>
     <header id="header">
       <div class="container header-nav">
-        <img src="src/assets/SVG files/navmi_logo.svg" alt="Navmi-email-icon" width="200" class="logo" />
+        <a href="/">
+          <img src="src/assets/SVG files/navmi_logo.svg" alt="Navmi-email-icon" width="200" class="logo" />
+        </a>
         <nav class="nav">
           <ul>
             <li><a href="">About Us</a></li>
@@ -114,51 +119,116 @@
 
       <!-- Popup Form -->
       <div class="popup-container">
-        <button class="close-btn">X</button>
-        <h3>Contact Us</h3>
-        <form id="popup-form">
 
-          <button type="submit">Submit</button>
-        </form>
+        <button class="close-btn" onclick="closePopup()">
+          <i class="fa-solid fa-x"></i>
+        </button>
+
+        <div class="popup-form">
+          <div class="container">
+            <div>
+
+              <div class="info-section">
+                <span>
+                  <img src="/src/assets/SVG files/form-arrow.svg" alt="form-arrow">
+                  How to Reach us?
+                </span>
+                <h2>Feel Free to Contact Us</h2>
+                <div class="info-texts">
+                  <h3>Apply Now for a Free 30 minutes consultation and email marketing audit.</h3>
+                  <p>Our expert audits will submit a detailed evaluation report of your email marketing strategies and
+                    walk
+                    you
+                    through how you can unlock the full potential of your e-commerce store.</p>
+                </div>
+              </div>
+            </div>
+
+            <form action="">
+              <h3>Personal Details:</h3>
+              <div class="Personal-Details">
+                <div class="input-container">
+                  <label for="firstname">First Name*</label>
+                  <input type="text">
+                </div>
+                <div class="input-container">
+                  <label for="lastname">Last Name*</label>
+                  <input type="text">
+                </div>
+
+              </div>
+              <h3>Contact Details:</h3>
+              <div class="Company-Details">
+                <div class="input-container">
+                  <label for="emailAddress">Email Address*</label>
+                  <input type="email">
+                </div>
+                <div class="input-container">
+                  <label for="ContactNumber">Contact Number*</label>
+                  <input type="text">
+                </div>
+                <div class="input-container">
+                  <label for="companyName">Company Name*</label>
+                  <input type="email">
+                </div>
+                <div class="input-container">
+                  <label for="companyAddress">Company Addresss*</label>
+                  <input type="text">
+                </div>
+                <div class="input-container">
+                  <label for="companyWebsite">Company Website*</label>
+                  <input type="text">
+                </div>
+                <div class="input-container">
+                  <label for="companyRevenue">Company Revenue*</label>
+                  <input type="number">
+                </div>
+              </div>
+              <button>Submit</button>
+
+            </form>
+
+          </div>
+        </div>
       </div>
 
       <section class="hero-section">
         <div class="container">
           <div class="hero-highlight-container">
-            <h1>
-              <span class="text-md">A team of</span>
-              <br>
-              Email Marketing Experts
-              <br>
-              <span class="text-lg">Dedicated to your</span>
+            <!-- highlight -->
+            <p class="text-md slide-from-down">A team of</p>
+            <h1 class="delay-slide-from-down">Email Marketing Experts</h1>
+            <p class="text-lg delay-slide-from-down-1">
+              Dedicated to your
               <strong>Ecommerce Brand!</strong>
-            </h1>
-            <p>
+            </p>
+            <!-- highlight -->
+            <p class="delay-slide-from-down-2">
               We help high-growth DTC brands maximize their
               <strong>Email/SMS Revenue</strong>
               in
               <br>just <strong>60 days!</strong>
             </p>
-            <p>
+            <p class="delay-slide-from-down-2">
               <strong>How'll we scale your ecommerce store?</strong>
             </p>
 
-            <button class="open-popup-btn">
+            <button class="open-popup-btn delay-slide-from-down-2">
               <span>Let's talk Now</span>
               <img src="src/assets/SVG files/right-arrow.svg" alt="right-arrow">
             </button>
           </div>
-          <img src="/src/assets/SVG files/Namvi-hero.svg" alt="navmi_hero">
+          <img class="delay-slide-from-top" src="/src/assets/SVG files/Namvi-hero.svg" alt="navmi_hero">
       </section>
 
       <section class="section-2" id="services">
         <div class="container">
           <div class="text-center mtb-20">
-            <h2 class="text-center sub-heading underline">Our Services</h2>
+            <h2 class="text-center sub-heading underline ">Our Services</h2>
           </div>
           <div class="card-wrapper">
 
-            <div class="card">
+            <div class="card ">
               <img src="src/assets/Icons/services/Email-Marketing.png" alt="Email-Marketing">
               <div class="card-heading-wrapper">
                 <h3>Email Marketing</h3>
@@ -172,7 +242,7 @@
                 brand stays top-of-mind while delivering measurable results.
               </p>
             </div>
-            <div class="card">
+            <div class="card ">
               <img src="src/assets/Icons/services/SMS-Marketing.png" alt="SMS-Marketing">
               <div class="card-heading-wrapper">
                 <h3>SMS Marketing</h3>
@@ -184,7 +254,7 @@
                 we help you leverage SMS as a high-converting channel to complement your email strategy and maximize
                 customer engagement.</p>
             </div>
-            <div class="card">
+            <div class="card ">
               <img src="src/assets/Icons/services/Email-Audit.png" alt="Email-Audit">
               <div class="card-heading-wrapper">
                 <h3>Free Audit</h3>
