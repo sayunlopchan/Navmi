@@ -27,13 +27,13 @@
     <link rel="stylesheet" href="src/css/popupform.css" />
     <link rel="stylesheet" href="src/animation/observer.css" />
 
-    <link rel="stylesheet" href="index.css" />
 
     <!-- title -->
     <title>Navmi</title>
     <!-- title -->
 
     <!-- script -->
+    <script defer src="src/js/activeLinks.js"></script>
     <script defer src="src/js/Menu.js"></script>
     <script defer src="src/js/slider.js"></script>
     <script defer src="src/js/headerScroll.js"></script>
@@ -52,12 +52,13 @@
         <nav class="nav">
           <!-- links -->
           <ul>
-            <li><a href="#aboutus">About Us</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#results">Results</a></li>
-            <li><a href="#email">Email Audit</a></li>
+            <li><a href="#aboutus" class="nav-link">About Us</a></li>
+            <li><a href="#services" class="nav-link">Service</a></li>
+            <li><a href="#results" class="nav-link">Results</a></li>
+            <li><a href="#email" class="nav-link">Email Audit</a></li>
           </ul>
         </nav>
+
 
         <div class="nav-btns">
           <!-- btn -->
@@ -91,10 +92,10 @@
           <!-- nav links -->
           <nav class="menu-nav">
             <ul>
-              <li><a href="">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="">Results</a></li>
-              <li><a href="">Email Audit</a></li>
+              <li><a href="#aboutus" class="nav-links">About Us</a></li>
+              <li><a href="#services" class="nav-links">Services</a></li>
+              <li><a href="#results" class="nav-links">Results</a></li>
+              <li><a href="#email" class="nav-links">Email Audit</a></li>
             </ul>
           </nav>
 
@@ -433,7 +434,7 @@
         </div>
       </section>
 
-      <section class="case-study-section section-5">
+      <section class="case-study-section section-5" id="casestudy">
         <div class="text-center heading">
           <h2 class="sub-heading underline-black delay-slide-from-down">Case Studies</h2>
         </div>
@@ -686,7 +687,7 @@
                 <p>
                   I didn't realize how much revenue we were leaving on the table
                   until NAVMI Emails helped us. They segmented our audience in
-                  ways we hadn’t thought of and built flows, campaigns that
+                  ways we hadn't thought of and built flows, campaigns that
                   performed amazing. In just two months, email became our
                   highest-performing channel. Our customers are happier, and so
                   are we!
@@ -776,7 +777,7 @@
                 <p>
                   I didn't realize how much revenue we were leaving on the table
                   until NAVMI Emails helped us. They segmented our audience in
-                  ways we hadn’t thought of and built flows, campaigns that
+                  ways we hadn't thought of and built flows, campaigns that
                   performed amazing. In just two months, email became our
                   highest-performing channel. Our customers are happier, and so
                   are we!
@@ -825,7 +826,7 @@
 
       <section class="section-9">
         <div class="container">
-          <h3 class="slide-from-down">What Email Audit Includes?</h3>
+          <h2 class="sub-heading text-center underline-black slide-from-down">What Email Audit Includes?</h2>
           <div class="section-9-grid">
 
             <div class="section-9-card delay-slide-from-down">
@@ -908,39 +909,53 @@
         <div class="container">
           <div class="head-wrapper">
             <span class="slide-from-down"><span></span> NAVMI Team <span></span></span>
-            <h3 class="delay-slide-from-down">Why Am I An Email Marketer?</h3>
+            <h2 class="sub-heading text-center delay-slide-from-down">Why Am I An Email Marketer?</h2>
           </div>
           <div class="founder-box">
             <div class="para-container delay-slide-from-down-1">
               <p>Hey there, I'm Aditya K., Founder & CEO of NAVMI Co.</p>
               <p>
-                To answer the question, let's travel back to 2018, when I first
-                started my career as a business consultant, helping brands
-                strategize and scale. But it wasn't until I was introduced to
-                the world of email marketing that I truly found my passion.
+                To answer the question, let's travel back to 2018, when I first started my
+                career as a business consultant, helping brands strategize and scale. But it
+                wasn't until I was introduced to the world of email marketing that I truly
+                found my passion.
               </p>
               <p>
-                What began as a role in email copywriting and sales strategy
-                quickly became an important aspect of my life journey. Early
-                days, I had the privilege of working with international
-                e-commerce brands, guided by experts and immersing myself in the
-                nuances of email marketing.
+                What began as a role in email copywriting and sales strategy quickly became
+                an important aspect of my life journey. Early days, I had the privilege of
+                working with international e-commerce brands, guided by experts and immersing
+                myself in the nuances of email marketing.
               </p>
               <p>
-                Then came the turning point, when I first analyzed the metrics,
-                and it amazed me! <span id="ellipsis">......</span>
+                Then came the turning point, when I first analyzed the metrics, and it amazed
+                me! <span id="ellipsis">......</span>
               </p>
-              <p id="extra-paragraph" style="display: none">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-                vitae fugit nam rerum corporis ducimus pariatur iure quisquam
-                facere neque necessitatibus maxime earum autem nihil nisi porro
-                ratione, consequatur fuga!
+              <p class="extra-paragraph" style="display: none;">
+                Then came the turning point, when I first analyzed the metrics, and it amazed me! I realized the
+                strategies I developed weren’t just working; they were transforming businesses. Brands were generating
+                30% to 60% of their total revenue through emails alone.
               </p>
+              <p class="extra-paragraph" style="display: none;">
+                It was eye-opening. What I once thought was a secondary marketing channel turned out to be one of the
+                most effective tools for driving revenue and building customer loyalty for e-commerce stores.
+              </p>
+              <p class="extra-paragraph" style="display: none;">
+                That realization sparked a vision. I wanted to help e-commerce brands succeed through the best email &
+                SMS. So, I assembled a team of experienced email marketing experts and established NAVMI. Today, we
+                specialize in creating tailored email and SMS strategies, automations, and campaigns that help brands
+                maximize their revenue and build a strong customer retention system.
+              </p>
+              <p class="extra-paragraph" style="display: none;">
+                Our journey is rooted in results, driven by data, and inspired by the impact we’ve seen email marketing
+                have on businesses like yours. We're here to help you achieve that same success. Let's talk!
+              </p>
+
               <button id="toggle-button">
                 Learn More
                 <img src="src/assets/SVG files/big-arrow.svg" alt="right-arrow" />
               </button>
             </div>
+
 
             <div class="founder-img-wrapper">
               <img src="src/assets/Logo/AdityaImg.jpg" alt="AdityaImg delay-slide-from-down-1" />
@@ -964,10 +979,10 @@
           <div class="footer-links">
             <h3>Quick Help</h3>
             <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Results</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Email Audit</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#results">Results</a></li>
+              <li><a href="#casestudy">Case Studies</a></li>
+              <li><a href="#email">Email Audit</a></li>
             </ul>
           </div>
 
@@ -976,8 +991,6 @@
             <ul>
               <li><a href="#">Email Designs</a></li>
               <li><a href="#">Blog</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Email Audit</a></li>
             </ul>
           </div>
 

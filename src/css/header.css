@@ -22,6 +22,32 @@ header.fixed {
 
 
 
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  /* Distance from the text */
+  left: 0;
+  width: 0;
+  height: 2px;
+  /* Thickness of the underline */
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+  width: 100%;
+  /* Full width underline for the active link */
+}
+
+
+
 header .header-nav {
   display: flex;
   justify-content: space-between;
@@ -110,12 +136,16 @@ header .contactBtn>i {
   margin-top: 30px;
 }
 
+.menu-nav ul {
+  text-align: start;
+}
+
 .menu-nav ul li {
-  padding: 20px 0;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu-nav ul li a {
+  display: block;
   padding: 20px 0;
   color: inherit;
   transition: all 0.3s ease;
@@ -126,7 +156,7 @@ header .contactBtn>i {
 }
 
 .menu-nav ul li:hover a {
-  color: white;
+  color: var(--light);
   margin-left: 5px;
 }
 
@@ -135,7 +165,7 @@ header .contactBtn>i {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
 

@@ -1,15 +1,10 @@
 .section-10 {
   background-color: var(--dark);
-  color: var(--light);
 }
 
+.section-10>.container,
 .section-10 p {
   color: var(--light);
-}
-
-.section-10>.container {
-  color: var(--light);
-  text-align: center;
 }
 
 .head-wrapper {
@@ -31,9 +26,6 @@
   background-color: var(--primary);
 }
 
-.head-wrapper>h3 {
-  font-size: var(--text-3xl);
-}
 
 .para-container {
   text-align: start;
@@ -87,6 +79,11 @@
 .founder-detail-box {
   position: relative;
   bottom: -60px;
+}
+
+.founder-detail-box>h4,
+.founder-detail-box>p {
+  text-align: center;
 }
 
 .founder-detail-box>h4 {

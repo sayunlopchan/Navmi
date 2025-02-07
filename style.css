@@ -113,28 +113,19 @@ body {
 
 .sub-sub-heading {
   font-size: var(--text-2xl);
-
-}
-
-/* .mtb-20 {
-  margin: 20px 0;
-} */
-
-.mb-20 {
-  margin-bottom: 20px;
 }
 
 .text-center {
   text-align: center;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
 
 .ptb {
   padding: 50px 0;
 }
-
-
-
 
 .underline {
   position: relative;
@@ -167,6 +158,8 @@ body {
   transform: translateX(-50%);
   background-color: var(--dark);
 }
+
+
 
 
 
@@ -245,10 +238,27 @@ body {
 }
 
 
+
+
+@media (max-width:768px) {
+  .sub-heading {
+    font-size: var(--text-2xl);
+  }
+}
+
+@media (max-width:668px) {
+  .sub-heading {
+    font-size: var(--text-xxlg);
+  }
+}
+
 @media (max-width:370px) {
+  .sub-heading {
+    font-size: var(--text-xlg);
+  }
+
   .popup-container {
     padding: 10px;
     width: 100%;
   }
-
 }
