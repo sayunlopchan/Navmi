@@ -39,6 +39,7 @@
     <script defer src="src/js/headerScroll.js"></script>
     <script defer src="src/js/showMore.js"></script>
     <script defer src="src/js/formPopup.js"></script>
+    <script defer src="src/js/comingSoon.js"></script>
     <script defer src="src/animation/observer.js"></script>
   </head>
 
@@ -92,10 +93,12 @@
           <!-- nav links -->
           <nav class="menu-nav">
             <ul>
-              <li><a href="#aboutus" class="nav-links">About Us</a></li>
-              <li><a href="#services" class="nav-links">Services</a></li>
-              <li><a href="#results" class="nav-links">Results</a></li>
-              <li><a href="#email" class="nav-links">Email Audit</a></li>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#results">Results</a></li>
+              <li><a href="#email">Email Audit</a></li>
+              <li><a href="#" class="coming-soon">Email Designs</a></li>
+              <li><a href="#" class="coming-soon">Blogs</a></li>
             </ul>
           </nav>
 
@@ -116,6 +119,15 @@
     <main>
       <!-- Popup Overlay -->
       <div id="popupOverlay" class="overlay"></div>
+
+      <!--coming soon Popup Box -->
+      <div class="coming-soon-popup hidden">
+        <div class="popup-content">
+          <h3>Coming Soon</h3>
+          <p>This feature is currently under development. Stay tuned for updates!</p>
+          <button class="close-popup">Close</button>
+        </div>
+      </div>
 
       <!-- Popup Form -->
       <div class="popup-container">
@@ -989,8 +1001,8 @@
           <div class="footer-links">
             <h3>Resources</h3>
             <ul>
-              <li><a href="#">Email Designs</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#" class="coming-soon">Email Designs</a></li>
+              <li><a href="#" class="coming-soon">Blog</a></li>
             </ul>
           </div>
 

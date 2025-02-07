@@ -25,19 +25,17 @@ header.fixed {
 .nav-link {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: var(--dark);
 }
 
 .nav-link::after {
   content: '';
   position: absolute;
   bottom: -2px;
-  /* Distance from the text */
   left: 0;
   width: 0;
   height: 2px;
-  /* Thickness of the underline */
-  background-color: black;
+  background-color: var(--dark);
   transition: width 0.3s ease;
 }
 
